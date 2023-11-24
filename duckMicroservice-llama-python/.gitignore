@@ -5,7 +5,7 @@ __pycache__/
 
 # C extensions
 *.so
-/.android
+
 # Distribution / packaging
 .Python
 build/
@@ -32,7 +32,6 @@ MANIFEST
 *.manifest
 *.spec
 
-/cache
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt

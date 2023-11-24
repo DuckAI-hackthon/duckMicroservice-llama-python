@@ -1,0 +1,13 @@
+[project]
+name = ""
+version = ""
+description = ""
+authors = [
+    {name = "Caussz", email = "cczcaua@gmail.com"},
+]
+dependencies = [
+    "requests>=2.31.0",
+    "replicate>=0.20.0",
+]
+requires-python = ">=3.11"
+license = {text = "MIT"}
