@@ -3,9 +3,6 @@ from openai import OpenAI
 client = OpenAI(api_key="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")
 import os
 
-# Load API key from environment variable
-
-
 def qea(prompt):
     completion = client.chat.completions.create(model="gpt-3.5-turbo",
     messages=[{"role": "user", "content": prompt}],
@@ -30,5 +27,3 @@ def get_keywords(prompt):
     messages=[{"role": "user", "content": f"Get 7 keywords from {prompt}"}],
     temperature=0.7)
     return completion
-
-qea('oi tudo bem?')
