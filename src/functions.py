@@ -4,20 +4,6 @@ LLAMA_API_KEY = ""
 
 client = replicate.Client(api_token=LLAMA_API_KEY)
 
-
-# output = replicate.run(
-#   "meta/llama-2-70b-chat:e951f18578850b652510200860fc4ea62b3b16fac280f83ff32282f87bbd2e48",
-#   input={
-#     "top_p": 1,
-#     "prompt": "User: Can you write a poem about open source machine learning? Let's make it in the style of E. E. Cummings.\nAssistant:",
-#     "max_length": 500,
-#     "temperature": 0.5,
-#     "repetition_penalty": 1
-#   }
-# )
-# print(output)
-
-
 def qea(prompt):
     response = client.run("meta/llama-2-70b-chat:02e509c789964a7ea8736978a43525956ef40397be9033abf9fd2badfe68c9e3",
                  input={
